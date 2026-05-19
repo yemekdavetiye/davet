@@ -38,6 +38,7 @@ a {
 
 .page-shell {
   min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   place-items: center;
   padding: 24px;
@@ -508,12 +509,20 @@ a {
 
 @media (max-width: 520px) {
   .page-shell {
-    padding: 12px;
+    min-height: 100svh;
+    min-height: 100dvh;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .invitation {
+    width: 100%;
   }
 
   .envelope-card {
     min-height: 100svh;
-    border-radius: 28px;
+    min-height: 100dvh;
+    border-radius: 0;
   }
 
   .hero-ornament {
@@ -560,6 +569,7 @@ a {
   .seal-button {
     width: 118px;
     height: 118px;
+    top: 44%;
   }
 
   .seal-text-stack {
@@ -576,7 +586,7 @@ a {
   }
 
   .seal-hint {
-    top: calc(50% + 92px);
+    top: calc(44% + 92px);
     font-size: 1.2rem;
   }
 
