@@ -15,12 +15,9 @@
   <body>
     <main class="page-shell">
       <section class="invitation" aria-live="polite">
-        <div class="hero-ornament ornament-top-left"></div>
-        <div class="hero-ornament ornament-top-right"></div>
-        <div class="hero-ornament ornament-bottom-left"></div>
-        <div class="hero-ornament ornament-bottom-right"></div>
-        <div class="hero-line hero-line-left"></div>
-        <div class="hero-line hero-line-right"></div>
+        <div class="paper-grain"></div>
+        <img class="hero-flower hero-flower-top-left" src="assets/flower-corner.png" alt="" />
+        <img class="hero-flower hero-flower-bottom-right" src="assets/flower-corner.png" alt="" />
         <div class="floating-blur blur-left"></div>
         <div class="floating-blur blur-right"></div>
 
@@ -38,56 +35,61 @@
           <p class="seal-hint">Bas ve davetiye a&ccedil;&#305;ls&#305;n</p>
 
           <div class="letter" id="inviteContent">
-            <p class="eyebrow">D&uuml;&#287;&uuml;n sonras&#305; yemek daveti</p>
-            <h1 class="couple-names">Fatih <span>&</span> Hilal</h1>
-            <p class="invite-copy">
-              Bu g&uuml;zel g&uuml;n&uuml;m&uuml;z&uuml;n ard&#305;ndan, birlikte olaca&#287;&#305;m&#305;z yemek davetinde seni de aram&#305;zda g&ouml;rmekten mutluluk duyar&#305;z.
-            </p>
+            <div class="invite-card">
+              <img class="card-flower card-flower-top" src="assets/flower-corner.png" alt="" />
+              <img class="card-flower card-flower-bottom" src="assets/flower-corner.png" alt="" />
 
-            <div class="details-grid">
-              <article class="detail-card">
-                <p class="detail-label">Tarih</p>
-                <p class="detail-value">7 Haziran Pazar</p>
-              </article>
-              <article class="detail-card">
-                <p class="detail-label">Saat</p>
-                <p class="detail-value">18:00</p>
-              </article>
-              <article class="detail-card">
-                <p class="detail-label">Mekan</p>
-                <p class="detail-value">Tantavi Sosyal Tesisi</p>
-              </article>
-              <article class="detail-card">
-                <p class="detail-label">Adres</p>
-                <p class="detail-value">Karayusuf Sk. No:10, 34764 &Uuml;mraniye/&#304;stanbul</p>
-              </article>
-            </div>
-
-            <div class="actions">
-              <a
-                class="action-button action-button-primary"
-                href="https://www.google.com/maps/search/?api=1&query=%C3%9Cmraniye%20Belediyesi%20Tantavi%20Sosyal%20Tesisi%2C%20Karayusuf%20Sk.%20No%3A10%2C%2034764%20%C3%9Cmraniye%2F%C4%B0stanbul"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Konum Tarifi
-              </a>
-            </div>
-
-            <section class="rsvp-box" id="rsvp">
-              <p class="rsvp-title">Geliyor musun?</p>
-              <div class="rsvp-actions">
-                <button class="rsvp-button" type="button" data-response="Evet, geliyorum">
-                  Evet
-                </button>
-                <button class="rsvp-button rsvp-button-muted" type="button" data-response="Maalesef kat&#305;lam&#305;yorum">
-                  Hay&#305;r
-                </button>
-              </div>
-              <p class="rsvp-feedback" id="rsvpFeedback">
-                Se&ccedil;im yapt&#305;ktan sonra sana uygun yan&#305;t mesaj&#305; haz&#305;rlanacak.
+              <p class="eyebrow">Yemek daveti</p>
+              <h1 class="couple-names">Fatih ve<br />Nazl&#305; Hilal</h1>
+              <p class="invite-copy">
+                Bu mutlu g&uuml;n&uuml;m&uuml;z&uuml;n ard&#305;ndan, birlikte olaca&#287;&#305;m&#305;z yemek davetinde sizi de aram&#305;zda g&ouml;rmekten mutluluk duyar&#305;z.
               </p>
-            </section>
+
+              <div class="host-line">
+                <p>Ailemizin bu g&uuml;zel ak&#351;am&#305;nda sevincimizi sizinle payla&#351;mak isteriz.</p>
+              </div>
+
+              <div class="details-grid">
+                <article class="detail-card">
+                  <p class="detail-label">Mekan</p>
+                  <p class="detail-value">Tantavi Sosyal Tesisi</p>
+                </article>
+                <article class="detail-card">
+                  <p class="detail-label">Saat</p>
+                  <p class="detail-value">18:00</p>
+                </article>
+                <article class="detail-card detail-card-wide">
+                  <p class="detail-label">Tarih ve Adres</p>
+                  <p class="detail-value">7 Haziran Pazar<br />Karayusuf Sk. No:10, 34764 &Uuml;mraniye/&#304;stanbul</p>
+                </article>
+              </div>
+
+              <div class="actions">
+                <a
+                  class="action-button action-button-primary"
+                  href="https://www.google.com/maps/search/?api=1&query=%C3%9Cmraniye%20Belediyesi%20Tantavi%20Sosyal%20Tesisi%2C%20Karayusuf%20Sk.%20No%3A10%2C%2034764%20%C3%9Cmraniye%2F%C4%B0stanbul"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Konum Tarifi
+                </a>
+              </div>
+
+              <section class="rsvp-box" id="rsvp">
+                <p class="rsvp-title">Geliyor musun?</p>
+                <div class="rsvp-actions">
+                  <button class="rsvp-button" type="button" data-response="Evet, geliyorum">
+                    Evet
+                  </button>
+                  <button class="rsvp-button rsvp-button-muted" type="button" data-response="Maalesef kat&#305;lam&#305;yorum">
+                    Hay&#305;r
+                  </button>
+                </div>
+                <p class="rsvp-feedback" id="rsvpFeedback">
+                  Se&ccedil;im yapt&#305;ktan sonra sana uygun yan&#305;t mesaj&#305; haz&#305;rlanacak.
+                </p>
+              </section>
+            </div>
           </div>
         </div>
       </section>
