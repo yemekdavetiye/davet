@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dijital Davetiye</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="invitation" aria-live="polite">
+        <div class="hero-ornament ornament-top-left"></div>
+        <div class="hero-ornament ornament-top-right"></div>
+        <div class="hero-ornament ornament-bottom-left"></div>
+        <div class="hero-ornament ornament-bottom-right"></div>
+        <div class="hero-line hero-line-left"></div>
+        <div class="hero-line hero-line-right"></div>
+        <div class="floating-blur blur-left"></div>
+        <div class="floating-blur blur-right"></div>
+
+        <div class="envelope-card" id="envelopeCard">
+          <div class="envelope-face envelope-left"></div>
+          <div class="envelope-face envelope-right"></div>
+
+          <button class="seal-button" id="openInvite" aria-expanded="false" aria-controls="inviteContent">
+            <span class="seal-ring"></span>
+            <span class="seal-text-stack">
+              <span class="seal-core-text">Yuvarla&#287;a</span>
+              <span class="seal-core-text seal-core-text-bottom">bas</span>
+            </span>
+          </button>
+          <p class="seal-hint">Bas ve davetiye a&ccedil;&#305;ls&#305;n</p>
+
+          <div class="letter" id="inviteContent">
+            <p class="eyebrow">D&uuml;&#287;&uuml;n sonras&#305; yemek daveti</p>
+            <h1 class="couple-names">Fatih <span>&</span> Hilal</h1>
+            <p class="invite-copy">
+              Bu g&uuml;zel g&uuml;n&uuml;m&uuml;z&uuml;n ard&#305;ndan, birlikte olaca&#287;&#305;m&#305;z yemek davetinde seni de aram&#305;zda g&ouml;rmekten mutluluk duyar&#305;z.
+            </p>
+
+            <div class="details-grid">
+              <article class="detail-card">
+                <p class="detail-label">Tarih</p>
+                <p class="detail-value">7 Haziran Pazar</p>
+              </article>
+              <article class="detail-card">
+                <p class="detail-label">Saat</p>
+                <p class="detail-value">18:00</p>
+              </article>
+              <article class="detail-card">
+                <p class="detail-label">Mekan</p>
+                <p class="detail-value">Tantavi Sosyal Tesisi</p>
+              </article>
+              <article class="detail-card">
+                <p class="detail-label">Adres</p>
+                <p class="detail-value">Karayusuf Sk. No:10, 34764 &Uuml;mraniye/&#304;stanbul</p>
+              </article>
+            </div>
+
+            <div class="actions">
+              <a
+                class="action-button action-button-primary"
+                href="https://www.google.com/maps/search/?api=1&query=%C3%9Cmraniye%20Belediyesi%20Tantavi%20Sosyal%20Tesisi%2C%20Karayusuf%20Sk.%20No%3A10%2C%2034764%20%C3%9Cmraniye%2F%C4%B0stanbul"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Konum Tarifi
+              </a>
+            </div>
+
+            <section class="rsvp-box" id="rsvp">
+              <p class="rsvp-title">Geliyor musun?</p>
+              <div class="rsvp-actions">
+                <button class="rsvp-button" type="button" data-response="Evet, geliyorum">
+                  Evet
+                </button>
+                <button class="rsvp-button rsvp-button-muted" type="button" data-response="Maalesef kat&#305;lam&#305;yorum">
+                  Hay&#305;r
+                </button>
+              </div>
+              <p class="rsvp-feedback" id="rsvpFeedback">
+                Se&ccedil;im yapt&#305;ktan sonra sana uygun yan&#305;t mesaj&#305; haz&#305;rlanacak.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
