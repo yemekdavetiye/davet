@@ -36,3 +36,9 @@ Not:
 
 - Misafir davetiyede `Evet/Hayir`, `Ad Soyad` ve `Kac kisi geleceksiniz` alanini doldurur.
 - Form gonderilince hem WhatsApp mesaji acilir hem de `sheetEndpoint` tanimliysa Google Sheet'e kayit dusur.
+
+Eger Apps Script'i ilk kurduktan sonra kayit dusmediyse:
+
+1. Apps Script icindeki kodu bu projedeki guncel [apps-script.gs](./apps-script.gs) ile degistir.
+2. `Deploy > Manage deployments` icinden mevcut web app'i `Edit` edip yeniden `Deploy` et.
+3. Eski URL degisirse [script.js](./script.js) ve [script-v8.js](./script-v8.js) icindeki `sheetEndpoint` satirini guncelle.

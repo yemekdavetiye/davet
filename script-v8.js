@@ -8,7 +8,7 @@ const guestCountInput = document.getElementById("guestCount");
 
 const whatsappNumber = "905350418689";
 const sheetEndpoint =
-  "https://script.google.com/macros/s/AKfycbxD4eh4bdVBkTSb4oTOdd0FoO1f3YvtHlQXkPTdfStJEzOvcQD9mfrce3u2lDovNB8zqA/exec";
+  "https://script.google.com/macros/s/AKfycbwyIkLRNPJg5RTkT9bwZkdS1jEajdxKUq0UNlWthhVwM8Z9cBX6TjZSrF47ieVw1eb0AQ/exec";
 
 let selectedResponse = "";
 
@@ -81,13 +81,15 @@ rsvpForm?.addEventListener("submit", async (event) => {
 
   if (sheetEndpoint) {
     try {
+      const formBody = new URLSearchParams(payload).toString();
+
       await fetch(sheetEndpoint, {
         method: "POST",
-        mode: "cors",
+        mode: "no-cors",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
         },
-        body: JSON.stringify(payload),
+        body: formBody,
       });
     } catch (error) {
       rsvpFeedback.textContent =
